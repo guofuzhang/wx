@@ -1,14 +1,14 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <text>hehe12</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<view> {{ message }} </view>
+<text id="{{message}}">heheh</text>
+<view id="item-{{id}}">{{id}}</view>
+<view wx:if="{{condition}}">222 </view>
+<checkbox checked="{{true}}"> </checkbox>
+<template is="objectCombine" data="{{for: a, bar: b}}"></template>
+<button bindtap='hehe'>dddddd</button>
+<view wx:for="{{array}}" wx:for-item="i">
+<view wx:for="{{array}}" wx:for-item="j">
+<view wx:if="{{i<=j}}">
+{{i}}*{{j}}={{i*j}}
+</view>
+</view>
 </view>
