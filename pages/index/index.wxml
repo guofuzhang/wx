@@ -1,7 +1,10 @@
 <view> {{ message }} </view>
+
+
 <text id="{{message}}">heheh</text>
 <view id="item-{{id}}">{{id}}</view>
 <view wx:if="{{condition}}">222 </view>
+<view wx:if="{{is_true}}">iam true</view>
 <checkbox checked="{{true}}"> </checkbox>
 <template is="objectCombine" data="{{for: a, bar: b}}"></template>
 <button bindtap='hehe'>dddddd</button>
@@ -12,3 +15,7 @@
 </view>
 </view>
 </view>
+<block wx:for="{{[1, 2, 3]}}">
+  <view> {{index}}: </view>
+  <view> {{item}} </view>
+</block>

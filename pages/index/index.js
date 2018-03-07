@@ -1,6 +1,7 @@
 Page({
   data: {
     message: '你好!',
+    is_true:true,
     id: 0,
     condition: true,
     a: 1,
@@ -11,6 +12,12 @@ Page({
     // console.log(66666)
     this.setData({
       message:'just soso',
+      is_true:!this.data.is_true,
+
     })
   },
+  onLoad:function(){
+    console.log(222);
+  },
+
 })
