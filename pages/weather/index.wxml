@@ -1,4 +1,6 @@
-<form bindsubmit="formSubmit" bindreset="formReset">
+<navigator url="./camera" hover-class="navigator-hover">跳转到新页面</navigator>
+
+<form class='form1' bindsubmit="formSubmit" bindreset="formReset">
   <view class="section">
     <view class="section__title">请输入城市名称</view>
     <input name="input" placeholder="please input here" />
@@ -8,12 +10,12 @@
   </view>	
 </form>
 
-<text wx:for="{{message}}">
-  日期:{{item.date}} 
-  最高温度:{{item.high}}
-  最低温度:{{item.low}}
-  温馨提示:{{item.notice}}
-</text>
+<view  class='item' wx:for="{{message}}">
+  <view>日期:<text class='t1'>{{item.date}}</text> </view>
+ <view> 最高温度:{{item.high}}</view>
+  <view>最低温度:{{item.low}}</view>
+ <view> 温馨提示:{{item.notice}}</view>
+</view>
 
 <!--循环10次  -->
 <view wx:for="{{10}}">循环10</view>

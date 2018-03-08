@@ -1,11 +1,12 @@
 {
   "pages":[
     "pages/weather/index",
+    "pages/weather/camera",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#ccc",
+    "navigationBarBackgroundColor": "#48C23D",
     "navigationBarTitleText": "天气预报",
     "navigationBarTextStyle":"black"
   }

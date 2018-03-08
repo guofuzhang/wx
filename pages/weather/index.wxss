@@ -1,0 +1,12 @@
+.item {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  margin-top: 20px; 
+  color: red;
+}
+
+.t1{
+  margin-left: 10px;
+  font-size: 12px; color: #999;  height: 20px; line-height: 20px; overflow: hidden;
+}
