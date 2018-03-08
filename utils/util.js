@@ -15,5 +15,17 @@ const formatNumber = n => {
 }
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+
+    AJAX : function( url='',data = '',method = "get", fn,  header = {}){
+        wx.request({
+            url: config.API_HOST + data,
+            method : method ? method : 'get',
+            data: {},
+            header: header ? header : {"Content-Type":"application/json"},
+            success: function( res ) {
+                fn( res );
+            }
+        });
+    },
 }
